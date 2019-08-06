@@ -5,6 +5,10 @@
  */
 package aerolineas;
 
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
 /**
  *
  * @author salvagibert
@@ -15,8 +19,8 @@ public class Aerolineas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hola jejejejejjejejee");
+        Interfaz1 interfaz = new Interfaz1();
+        interfaz.setVisible(true);
     }
-    
+
 }
