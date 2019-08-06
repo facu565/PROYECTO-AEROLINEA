@@ -16,7 +16,9 @@ public class Aerolineas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hola jejejejejjejejee");
+        
+        NewJFrame login1 = new NewJFrame();
+        login1.setVisible(true);
     }
     
 }
