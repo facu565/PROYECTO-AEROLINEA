@@ -6,6 +6,7 @@
 package aerolineas;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
  *
@@ -23,12 +24,35 @@ public class Busqueda extends JFrame {
         jLabelAca.setText(bv1.getTxt1());
         jLabelAlla.setText(bv1.getTxt2());
         jLabelDias.setText(Integer.toString(bv1.getResu1()));
-        jLabelAyÑ.setText(Integer.toString(bv1.getResu2()));
-        
+        LabelAÑ.setText(Integer.toString(bv1.getResu2()));
+        LabelÑ.setText(Integer.toString(bv1.getResu3()));
+        CalcularTripulantes();
         
     }
+
+    private Busqueda() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public void CalcularTripulantes(){
+        String grandes = LabelAÑ.getText();
+        int grandesint = Integer.parseInt(grandes);
+        grandesint = grandesint *1500;
+        String niños = LabelÑ.getText();
+        int niñosint = Integer.parseInt(niños);
+        niñosint = niñosint * 1000;
+        String suma = Integer.toString(grandesint + niñosint);
+        System.out.println(suma);
+        this.LabelÑinoA.setText(suma);
 }
+
+    public JLabel getLabelÑinoA() {
+        return LabelÑinoA;
+    }
+
+    public void setLabelÑinoA(JLabel LabelÑinoA) {
+        this.LabelÑinoA = LabelÑinoA;
+    }
+  
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,73 +73,57 @@ public class Busqueda extends JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabelAlla1 = new javax.swing.JLabel();
+        LabelAÑ = new javax.swing.JLabel();
+        LabelÑ = new javax.swing.JLabel();
+        LabelÑinoA = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+        getContentPane().add(jLabelAca);
+        jLabelAca.setBounds(12, 95, 80, 26);
+        getContentPane().add(jLabelAlla);
+        jLabelAlla.setBounds(117, 95, 94, 31);
+        getContentPane().add(jLabelDias);
+        jLabelDias.setBounds(290, 70, 80, 40);
+        getContentPane().add(jLabelAyÑ);
+        jLabelAyÑ.setBounds(380, 95, 0, 0);
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(567, 12, 0, 0);
 
         jLabelPFinal.setText("Precio final");
+        getContentPane().add(jLabelPFinal);
+        jLabelPFinal.setBounds(30, 130, 77, 17);
 
         jLabel1.setText("Origen");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(30, 50, 48, 17);
 
         jLabel2.setText("Dias de viaje");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(180, 50, 83, 17);
 
         jLabel3.setText("Destino");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(100, 50, 54, 17);
 
         jLabel4.setText("Precio de tripulantes");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(290, 40, 163, 33);
+        getContentPane().add(jLabelAlla1);
+        jLabelAlla1.setBounds(223, 95, 94, 31);
+        getContentPane().add(LabelAÑ);
+        LabelAÑ.setBounds(748, 126, 0, 0);
+        getContentPane().add(LabelÑ);
+        LabelÑ.setBounds(693, 166, 0, 0);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelAca, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jLabelAlla, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabelDias)
-                        .addGap(57, 57, 57)
-                        .addComponent(jLabelAyÑ)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabelPFinal)
-                        .addGap(107, 107, 107))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelPFinal))
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelAlla, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelAca, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelDias)
-                    .addComponent(jLabelAyÑ))
-                .addContainerGap(176, Short.MAX_VALUE))
-        );
+        LabelÑinoA.setText("aca");
+        getContentPane().add(LabelÑinoA);
+        LabelÑinoA.setBounds(390, 70, 124, 26);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+/**/
     /**
      * @param args the command line arguments
      */
@@ -152,6 +160,9 @@ public class Busqueda extends JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelAÑ;
+    private javax.swing.JLabel LabelÑ;
+    private javax.swing.JLabel LabelÑinoA;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -159,6 +170,7 @@ public class Busqueda extends JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabelAca;
     private javax.swing.JLabel jLabelAlla;
+    private javax.swing.JLabel jLabelAlla1;
     private javax.swing.JLabel jLabelAyÑ;
     private javax.swing.JLabel jLabelDias;
     private javax.swing.JLabel jLabelPFinal;
