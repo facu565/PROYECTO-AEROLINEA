@@ -20,7 +20,7 @@ public class Aerolineas {
         /*NewJFrame login1 = new NewJFrame();
         login1.setVisible(true);*/
         
-        InterfazPrueba form1 = new InterfazPrueba();
+        Inicio form1 = new Inicio();
 
         form1.setVisible(true);
 //        
