@@ -5,6 +5,8 @@
  */
 package aerolineas;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import javax.swing.JFrame;
 
 /**
@@ -12,7 +14,8 @@ import javax.swing.JFrame;
  * @author salvagibert
  */
 public class Boleto extends JFrame{
-
+    
+    private String Var;
     /**
      * Creates new form Boleto
      */
@@ -30,9 +33,13 @@ public class Boleto extends JFrame{
         jLabel6.setText(v1.getText6());
         jLabel7.setText(v1.getText7());
         jLabel8.setText(v1.getText8());
+        
 
         
     }
+    
+    
+   
     
    
     /**
@@ -181,8 +188,13 @@ public class Boleto extends JFrame{
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Compra com1 = new Compra();
+        InfoVuelos v2 = new InfoVuelos(jLabel1.getText(),jLabel2.getText(),jLabel3.getText(),jLabel4.getText(),
+            jLabel5.getText(),jLabel6.getText(),jLabel7.getText(),jLabel8.getText());
+        Compra com1 = new Compra(v2);
         com1.setVisible(true);
+        
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

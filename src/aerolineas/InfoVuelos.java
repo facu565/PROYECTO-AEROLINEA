@@ -35,7 +35,8 @@ public class InfoVuelos {
         this.text7 = text7;
         this.text8 = text8;
     }
-
+    
+    
 
     
     public String getText1(){

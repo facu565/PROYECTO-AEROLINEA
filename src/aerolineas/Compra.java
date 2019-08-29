@@ -5,24 +5,82 @@
  */
 package aerolineas;
 
+import com.itextpdf.text.Document;
+import com.itextpdf.text.PageSize;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author salvagibert
  */
 public class Compra extends javax.swing.JFrame {
-
+    private String codigo=creaPass();
+    private String texto1;
+    private String texto2;
+    private String texto3;
+    private String texto4;
+    private String texto5;
+    private String texto6;
+    private String texto7;
+    private String texto8;
     
     /**
      * Creates new form Compra
      */
-    public Compra() {
+    public Compra(InfoVuelos v2) {
         initComponents();
+        String text=area.getText();
+        texto1=v2.getText1();
+        area.setText(text+v2.getText1());
+        text = area.getText();
+        area.setText(text+"\n"+v2.getText2());
+        text = area.getText();
+        texto2=v2.getText2();
+        area.setText(text+"\n"+v2.getText3());
+        text = area.getText();
+        texto3=v2.getText3();
+        area.setText(text+"\n"+v2.getText4());
+        text = area.getText();
+        texto4=v2.getText4();
+        area.setText(text+"\n"+v2.getText5());
+        text = area.getText();
+        texto5=v2.getText5();
+        area.setText(text+"\n"+v2.getText6());
+        texto6=v2.getText6();
+        text = area.getText();
+        area.setText(text+"\n"+v2.getText7());
+        texto7=v2.getText7();
+        text = area.getText();
+        area.setText(text+"\n"+v2.getText8());
+        texto8=v2.getText8();
+        text = area.getText();
+        area.setText(text+"\n"+"Codigo: "+codigo);
     }
+    
+    
 
-   
+   public String creaPass(){
+        char[] elementos={'0','1','2','3','4','5','6','7','8','9' ,'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'};
+
+        char[] conjunto = new char[8];
+        String pass;
+        
+        for(int i=0;i<8;i++){
+        int el = (int)(Math.random()*37);
+        conjunto[i] = (char)elementos[el];
+            }
+        return pass = new String(conjunto);
+    }
+    
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -47,11 +105,18 @@ public class Compra extends javax.swing.JFrame {
             }
         });
 
+        area.setEditable(false);
         area.setColumns(20);
+        area.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
         area.setRows(5);
         jScrollPane1.setViewportView(area);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Generar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -98,13 +163,55 @@ public class Compra extends javax.swing.JFrame {
             File f = dlg.getSelectedFile();
             txtruta.setText(f.toString());
     }//GEN-LAST:event_jButton1ActionPerformed
+    }
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String ruta = txtruta.getText();
+        String contenido = area.getText();
+        
+        try {
+            FileOutputStream archivo = new FileOutputStream(ruta+".pdf");
+            Document doc = new Document(PageSize.A7, 50, 50, 50, 50);
+            PdfWriter.getInstance(doc, archivo);
+            doc.open();
+            doc.add(new Paragraph(contenido));
+            
+            doc.close();
+            
+            JOptionPane.showMessageDialog(null, "Pdf correctamente creado ");
+            
+        } catch (Exception e) {
+            System.out.println("Error");
+        }
+        FileWriter fichero = null;
+        PrintWriter pw = null;
+        try{
+            fichero = new FileWriter("./src/aerolineas/registro.txt",true);
+            pw = new PrintWriter(fichero);
+            pw.println(texto1+";"+texto2+";"+texto3+";"+texto4+";"+texto5+";"+texto6+";"+texto7+";"+texto8+";"+codigo);
+            
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+            
+        }finally {
+            try{ 
+                if (null != fichero)
+                    fichero.close();}
+                catch (Exception e2){
+                        e2.printStackTrace();
+                        }
+            }
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        
+//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
