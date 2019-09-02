@@ -124,11 +124,12 @@ public class VuelosDisponibles extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(102, 153, 255));
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel1.setForeground(java.awt.SystemColor.activeCaption);
 
+        jLabel1.setBackground(java.awt.SystemColor.activeCaption);
         jLabel1.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel1.setForeground(java.awt.SystemColor.activeCaption);
         jLabel1.setText("New York,  Estados Unidos");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
@@ -143,7 +144,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Clase: Economica");
 
-        jButton1.setBackground(new java.awt.Color(204, 51, 0));
+        jButton1.setBackground(java.awt.SystemColor.activeCaption);
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Ver vuelo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -168,11 +169,12 @@ public class VuelosDisponibles extends javax.swing.JFrame {
 
         jLabel32.setText("11 hs");
 
+        jLabel5.setBackground(java.awt.SystemColor.activeCaption);
         jLabel5.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel5.setForeground(java.awt.SystemColor.activeCaption);
         jLabel5.setText("Lima, Peru");
 
-        jButton2.setBackground(new java.awt.Color(204, 51, 0));
+        jButton2.setBackground(java.awt.SystemColor.activeCaption);
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Ver vuelo");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -193,8 +195,9 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Clase: Economica");
 
+        jLabel10.setBackground(java.awt.SystemColor.activeCaption);
         jLabel10.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel10.setForeground(java.awt.SystemColor.activeCaption);
         jLabel10.setText("Cordoba Capital, Argentina");
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
@@ -209,7 +212,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Clase: Premium");
 
-        jButton3.setBackground(new java.awt.Color(204, 51, 0));
+        jButton3.setBackground(java.awt.SystemColor.activeCaption);
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Ver vuelo");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -218,8 +221,9 @@ public class VuelosDisponibles extends javax.swing.JFrame {
             }
         });
 
+        jLabel13.setBackground(java.awt.SystemColor.activeCaption);
         jLabel13.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel13.setForeground(java.awt.SystemColor.activeCaption);
         jLabel13.setText("Santa Fe, Argentina");
 
         jLabel14.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
@@ -234,7 +238,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Clase: Economica");
 
-        jButton4.setBackground(new java.awt.Color(204, 51, 0));
+        jButton4.setBackground(java.awt.SystemColor.activeCaption);
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Ver vuelo");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -243,8 +247,9 @@ public class VuelosDisponibles extends javax.swing.JFrame {
             }
         });
 
+        jLabel21.setBackground(java.awt.SystemColor.activeCaption);
         jLabel21.setFont(new java.awt.Font("Dialog", 3, 24)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(204, 51, 0));
+        jLabel21.setForeground(java.awt.SystemColor.activeCaption);
         jLabel21.setText("Berlin, Alemania");
 
         jLabel22.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
@@ -259,7 +264,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("Clase: Premium");
 
-        jButton6.setBackground(new java.awt.Color(204, 51, 0));
+        jButton6.setBackground(java.awt.SystemColor.activeCaption);
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Ver vuelo");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -268,7 +273,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(204, 51, 0));
+        jButton7.setBackground(java.awt.SystemColor.activeCaption);
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Volver");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -336,15 +341,17 @@ public class VuelosDisponibles extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                                    .addComponent(jLabel21)
+                                                    .addGap(63, 63, 63))
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jButton7)
+                                                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(jLabel23)
                                                     .addGap(18, 18, 18)
-                                                    .addComponent(jLabel24))
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                    .addComponent(jLabel21)
-                                                    .addGap(63, 63, 63)))
+                                                    .addComponent(jLabel24)))
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jLabel37)
                                             .addGap(18, 18, 18)
@@ -368,8 +375,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jLabel10)
                                                 .addGap(179, 179, 179)
-                                                .addComponent(jButton3)))
-                                        .addComponent(jButton7))
+                                                .addComponent(jButton3))))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel13)
                                         .addGap(276, 276, 276)
@@ -507,9 +513,9 @@ public class VuelosDisponibles extends javax.swing.JFrame {
                     .addComponent(jLabel22)
                     .addComponent(jLabel23)
                     .addComponent(jLabel24))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addComponent(jButton7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(25, 25, 25))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -517,22 +523,17 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 673, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap(546, Short.MAX_VALUE)
                 .addComponent(jLabel44)
                 .addGap(142, 142, 142))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(302, 302, 302)
-                .addComponent(jLabel44)
-                .addGap(132, 132, 132))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel44))
         );
 
         pack();

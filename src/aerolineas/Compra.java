@@ -37,30 +37,42 @@ public class Compra extends javax.swing.JFrame {
     public Compra(InfoVuelos v2) {
         initComponents();
         String text=area.getText();
-        texto1=v2.getText1();
+        
+        area.setText(text+"VILLADA AIRLINES"+"\n");
+        text = area.getText();
+        
         area.setText(text+v2.getText1());
         text = area.getText();
+        texto1=v2.getText1();
+        
         area.setText(text+"\n"+v2.getText2());
         text = area.getText();
         texto2=v2.getText2();
+        
         area.setText(text+"\n"+v2.getText3());
         text = area.getText();
         texto3=v2.getText3();
+        
         area.setText(text+"\n"+v2.getText4());
         text = area.getText();
         texto4=v2.getText4();
+        
         area.setText(text+"\n"+v2.getText5());
         text = area.getText();
         texto5=v2.getText5();
-        area.setText(text+"\n"+v2.getText6());
+        
+        area.setText(text+"\n"+"Hora Salida: "+v2.getText6());
+        text = area.getText();
         texto6=v2.getText6();
+        
+        area.setText(text+"\n"+"Hora Llegada: "+v2.getText7());
         text = area.getText();
-        area.setText(text+"\n"+v2.getText7());
         texto7=v2.getText7();
-        text = area.getText();
+        
         area.setText(text+"\n"+v2.getText8());
-        texto8=v2.getText8();
         text = area.getText();
+        texto8=v2.getText8();
+        
         area.setText(text+"\n"+"Codigo: "+codigo);
     }
     
@@ -90,27 +102,28 @@ public class Compra extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        txtruta = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         area = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        txtruta = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Buscar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
 
         area.setEditable(false);
         area.setColumns(20);
-        area.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        area.setFont(new java.awt.Font("Nimbus Mono L", 3, 18)); // NOI18N
         area.setRows(5);
+        area.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        area.setMargin(new java.awt.Insets(0, 10, 0, 10));
         jScrollPane1.setViewportView(area);
 
+        jButton2.setBackground(java.awt.SystemColor.activeCaption);
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Generar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,37 +131,66 @@ public class Compra extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(java.awt.SystemColor.activeCaption);
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Buscar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        txtruta.setEditable(false);
+        txtruta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jButton3.setBackground(java.awt.SystemColor.activeCaption);
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Volver");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtruta, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(jButton3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton2))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(17, 17, 17))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(txtruta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(txtruta)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1)))))
-                .addGap(17, 17, 17))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(txtruta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addContainerGap(10, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -168,18 +210,18 @@ public class Compra extends javax.swing.JFrame {
         // TODO add your handling code here:
         String ruta = txtruta.getText();
         String contenido = area.getText();
-        
+
         try {
             FileOutputStream archivo = new FileOutputStream(ruta+".pdf");
             Document doc = new Document(PageSize.A7, 50, 50, 50, 50);
             PdfWriter.getInstance(doc, archivo);
             doc.open();
             doc.add(new Paragraph(contenido));
-            
+
             doc.close();
-            
+
             JOptionPane.showMessageDialog(null, "Pdf correctamente creado ");
-            
+
         } catch (Exception e) {
             System.out.println("Error");
         }
@@ -189,22 +231,21 @@ public class Compra extends javax.swing.JFrame {
             fichero = new FileWriter("./src/aerolineas/registro.txt",true);
             pw = new PrintWriter(fichero);
             pw.println(texto1+";"+texto2+";"+texto3+";"+texto4+";"+texto5+";"+texto6+";"+texto7+";"+texto8+";"+codigo);
-            
-            
+
         } catch (Exception e) {
             e.printStackTrace();
-            
-        }finally {
-            try{ 
-                if (null != fichero)
-                    fichero.close();}
-                catch (Exception e2){
-                        e2.printStackTrace();
-                        }
-            }
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
 
+        }finally {
+            try{
+                if (null != fichero)
+                fichero.close();}
+            catch (Exception e2){
+                e2.printStackTrace();
+            }
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+    
     /**
      * @param args the command line arguments
      */
@@ -245,6 +286,8 @@ public class Compra extends javax.swing.JFrame {
     private javax.swing.JTextArea area;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtruta;
     // End of variables declaration//GEN-END:variables

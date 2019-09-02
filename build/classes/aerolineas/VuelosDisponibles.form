@@ -61,26 +61,20 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="673" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace pref="546" max="32767" attributes="0"/>
               <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
           </Group>
+          <Component id="jPanel1" alignment="1" pref="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="302" max="-2" attributes="0"/>
-              <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel44" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,10 +85,10 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="99" red="66" type="rgb"/>
+          <Color blue="ff" green="99" red="33" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
         </Property>
       </Properties>
 
@@ -131,16 +125,19 @@
                                       <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="63" pref="63" max="-2" attributes="0"/>
+                                                  </Group>
                                                   <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="jLabel22" min="-2" pref="89" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel22" min="-2" pref="89" max="-2" attributes="0"/>
+                                                      </Group>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="63" pref="63" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <EmptySpace max="32767" attributes="0"/>
@@ -171,7 +168,6 @@
                                                   <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <Component id="jButton7" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
@@ -351,9 +347,9 @@
                       <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace pref="30" max="32767" attributes="0"/>
                   <Component id="jButton7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -361,11 +357,14 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="New York,  Estados Unidos"/>
           </Properties>
@@ -406,7 +405,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -459,11 +458,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Lima, Peru"/>
           </Properties>
@@ -471,7 +473,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -517,11 +519,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Cordoba Capital, Argentina"/>
           </Properties>
@@ -562,7 +567,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -575,11 +580,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Santa Fe, Argentina"/>
           </Properties>
@@ -620,7 +628,7 @@
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -633,11 +641,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel21">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Berlin, Alemania"/>
           </Properties>
@@ -678,7 +689,7 @@
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -692,7 +703,7 @@
         <Component class="javax.swing.JButton" name="jButton7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="33" red="cc" type="rgb"/>
+              <Color blue="80" green="0" id="T&#xed;tulo Activo" palette="2" red="0" type="palette"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
