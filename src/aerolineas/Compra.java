@@ -218,7 +218,7 @@ public class Compra extends javax.swing.JFrame {
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta+".pdf");
-            Document doc = new Document(PageSize.A7, 50, 50, 50, 50);
+            Document doc = new Document(PageSize.A8, 50, 50, 50, 50);
             PdfWriter.getInstance(doc, archivo);
             doc.open();
             doc.add(new Paragraph(contenido));

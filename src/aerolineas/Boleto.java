@@ -219,6 +219,7 @@ public class Boleto extends JFrame{
             jLabel5.getText(),jLabel6.getText(),jLabel7.getText(),jLabel8.getText());
         Compra com1 = new Compra(v2);
         com1.setVisible(true);
+        setVisible(false);
         
         
         

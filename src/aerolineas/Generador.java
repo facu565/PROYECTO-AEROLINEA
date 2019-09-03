@@ -214,7 +214,7 @@ public class Generador extends javax.swing.JFrame {
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");
-            Document doc = new Document(PageSize.A7, 50, 50, 50, 50);
+            Document doc = new Document(PageSize.A8, 50, 50, 50, 50);
             PdfWriter.getInstance(doc, archivo);
             doc.open();
             doc.add(new Paragraph(contenido));
@@ -231,7 +231,7 @@ public class Generador extends javax.swing.JFrame {
         try{
             fichero = new FileWriter("./src/aerolineas/registro.txt",true);
             pw = new PrintWriter(fichero);
-            pw.println(texto1+";"+texto2+";"+texto3+";"+texto4+";"+texto5+";"+"Hora Salida: 16hs;"+"Hora Llegada: 18 hs;"+codigo);
+            pw.println(texto1+";"+texto2+";"+texto3+";"+texto4+";"+texto5+";"+"Hora Salida: 16hs;"+"Hora Llegada: 18 hs;"+"2hs;"+codigo);
         } catch (IOException e) {
             e.printStackTrace();
         }finally{

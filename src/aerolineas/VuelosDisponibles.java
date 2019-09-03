@@ -42,6 +42,7 @@ public class VuelosDisponibles extends javax.swing.JFrame {
         jLabel43.setVisible(false);
         jLabel44.setVisible(false);
         jLabel45.setVisible(false);
+        jLabel46.setVisible(false);
     }
 
     /**
