@@ -157,50 +157,30 @@ if (txtUsuario.getText().equals("Usuario") && clavedef.equals("12345")){
                     Inicio form1 = new Inicio();
 
                     form1.setVisible(true);
-                    
-                    /*System.out.println("Acceso Permitido");
-                    InterfazPrueba form1 = new InterfazPrueba(this);*/
-
-
-
-            }else {
-
-                    System.out.println("Acceso Denegado");
-                    JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
-                    + "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
-                    JOptionPane.ERROR_MESSAGE);
-           
-
-            
-        
+                       
     }//GEN-LAST:event_btnIngresarActionPerformed
-
-    if (txtUsuario.getText().equals("Administrador") && clavedef.equals("1234")){
+            else if (txtUsuario.getText().equals("Administrador") && clavedef.equals("12345")){
 
 
                     this.dispose();
 
                     System.out.println("Acceso Permitido");
-                    Inicio form1 = new Inicio();
-
+                    Verificador form1 = new Verificador();
                     form1.setVisible(true);
-                    
-                    /*System.out.println("Acceso Permitido");
-                    InterfazPrueba form1 = new InterfazPrueba(this);*/
+                   
 
 
 
-            }else {
+            }
+                else {
 
                     System.out.println("Acceso Denegado");
                     JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
                     + "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
                     JOptionPane.ERROR_MESSAGE);
-           
-
-            }
         
     } 
+    }
     /**
      * @param args the command line arguments
      */

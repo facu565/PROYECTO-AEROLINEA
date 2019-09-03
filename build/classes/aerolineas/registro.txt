@@ -1,1 +1,2 @@
-
+Buenos aires;Singapur;9;1;0;Hora Salida: 16hs;Hora Llegada: 18 hs;8s46sv6z
+Santa Fe, Argentina;Salida: 13/09;Llegada: 13/09;Clase: Premium;500$;12:00;13:00;1 hs;ngo25cm5
